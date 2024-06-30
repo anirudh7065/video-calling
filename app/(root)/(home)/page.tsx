@@ -1,5 +1,4 @@
 import MeetingTypeList from '@/components/MeetingTypeList';
-import date from '@/components/MeetingCard';
 
 const Home = () => {
   const now = new Date();
