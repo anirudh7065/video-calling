@@ -29,7 +29,6 @@ const MeetingCard = ({
   buttonText,
 }: MeetingCardProps) => {
   const { toast } = useToast();
-
   return (
     <section className="flex min-h-[258px] w-full flex-col justify-between rounded-[14px] bg-dark-1 px-5 py-8 xl:max-w-[568px]">
       <article className="flex flex-col gap-5">
@@ -72,6 +71,7 @@ const MeetingCard = ({
                 toast({
                   title: "Link Copied",
                 });
+
               }}
               className="bg-dark-4 px-6"
             >
@@ -88,6 +88,8 @@ const MeetingCard = ({
       </article>
     </section>
   );
+  
 };
-
 export default MeetingCard;
+
+
