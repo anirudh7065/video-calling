@@ -20,8 +20,8 @@ const config = {
     extend: {
       colors: {
         dark: {
-          1: '#1C1F2E',
-          2: '#161925',
+          1: '#000000',
+          2: '#131212',
           3: '#252A41',
           4: '#1E2757',
         },
@@ -58,7 +58,7 @@ const config = {
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
       backgroundImage: {
-        hero: "url('/images/hero-background.png')",
+        hero: "url('/images/bg.jpg')",
       },
     },
   },
