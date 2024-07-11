@@ -38,7 +38,7 @@ const MeetingModal = ({
         <div className="flex flex-col gap-6">
           {image && (
             <div className="flex justify-center">
-              <Image src={image} alt="checked" width={72} height={72} />
+              <Image src={image} alt="checked" width={72} height={72} className="h-auto w-auto" />
             </div>
           )}
           <h1 className={cn("text-3xl font-bold leading-[42px]", className)}>
@@ -57,6 +57,7 @@ const MeetingModal = ({
                 alt="button icon"
                 width={13}
                 height={13}
+                className="h-auto w-auto"
               />
             )}{" "}
             &nbsp;

@@ -5,9 +5,9 @@ const Home = () => {
   const time = now.toLocaleTimeString('en-IN' ,{hour: '2-digit', minute: '2-digit',timeZone:'Asia/Kolkata' });
   const date = (new Intl.DateTimeFormat('en-IN', { dateStyle: 'full',timeZone:'Asia/Kolkata' })).format(now);
   return (
-    <section className="flex size-full flex-col gap-5 text-white">
-      <div className="h-[303px] w-full rounded-[20px] bg-hero bg-cover">
-          <div className="flex flex-col gap-2">
+    <section className="flex size-full flex-col gap-5 text-white ">
+      <div className="h-[303px] w-full rounded-[20px] bg-hero bg-cover ">
+          <div className="flex flex-col gap-2 p-4 w-full h-full justify-end">
             <h1 className="text-4xl font-extrabold lg:text-7xl">{time}</h1>
             <p className="text-lg font-medium text-sky-1 lg:text-2xl">{date}</p>
           </div>
