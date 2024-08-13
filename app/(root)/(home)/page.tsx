@@ -1,9 +1,13 @@
 'use client'
 import MeetingTypeList from "@/components/MeetingTypeList";
+import { useContext } from "react";
+import DateContext from "@/components/context/dateContext";
 const Home = () => {
   const now = new Date();
   const time = now.toLocaleTimeString('en-IN' ,{hour: '2-digit', minute: '2-digit',timeZone:'Asia/Kolkata' });
   const date = (new Intl.DateTimeFormat('en-IN', { dateStyle: 'full',timeZone:'Asia/Kolkata' })).format(now);
+  const upc = useContext(DateContext);
+  console.log(upc);
   return (
     <section className="flex size-full flex-col gap-5 text-white ">
       <div className="h-[303px] w-full rounded-[20px] bg-hero bg-cover ">

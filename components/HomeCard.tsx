@@ -13,6 +13,7 @@ interface HomeCardProps {
 }
 
 const HomeCard = ({ className, img, title, description, handleClick }: HomeCardProps) => {
+  
   return (
     <section
       className={cn(
